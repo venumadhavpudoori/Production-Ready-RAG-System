@@ -1,0 +1,94 @@
+[
+  {
+    "id": "mars_eval_001",
+    "query": "What was the peak convective and radiative heat flux recorded on the heatshield by MEDLI2 during Mars 2020 entry?",
+    "ground_truth": "The peak convective heat flux recorded was 118 W/cm², while radiative heating contributed an additional 14 W/cm², totaling a peak heat flux of 132 W/cm².",
+    "reference_contexts": [
+      "The peak convective heat flux recorded was 118 W/cm², while radiative heating contributed an additional 14 W/cm², totaling a peak heat flux of 132 W/cm²."
+    ],
+    "target_doc_id": "NASA-M2020-EDL"
+  },
+  {
+    "id": "mars_eval_002",
+    "query": "What is the operating temperature of the Solid Oxide Electrolysis Cells in MOXIE and what are the steady-state oxygen production rates?",
+    "ground_truth": "The SOEC operates at a temperature of 800°C (1,073 K) and produces oxygen at steady-state rates between 6.0 and 12.2 grams per hour with purity >= 98.0%.",
+    "reference_contexts": [
+      "Inside the SOEC at an operating temperature of 800°C (1,073 K), carbon dioxide molecules are catalytically dissociated",
+      "MOXIE produced oxygen at steady-state rates between 6.0 and 12.2 grams per hour (g/hr)."
+    ],
+    "target_doc_id": "NASA-M2020-MOXIE"
+  },
+  {
+    "id": "mars_eval_003",
+    "query": "What organic compounds were detected by the SAM instrument on Curiosity in Gale Crater mudstone?",
+    "ground_truth": "SAM detected chlorobenzene at concentrations of 150 to 300 ppb, dichloroalkanes, chloromethane, and refractory thiophenes (such as benzothiophene and alkylthiols).",
+    "reference_contexts": [
+      "SAM detected chlorobenzene (C6H5Cl) at concentrations of 150 to 300 parts per billion (ppb), along with dichloroalkanes (1,2-dichloropropane, 1,2-dichlorobutane) and chloromethane.",
+      "High-temperature pyrolysis (>600°C) of the Mojave 2 and Confidence Hills mudstone samples released sulfur-bearing refractory heterocyclic organics, specifically thiophenes (C4H4S)"
+    ],
+    "target_doc_id": "NASA-MSL-SAM"
+  },
+  {
+    "id": "mars_eval_004",
+    "query": "What is the estimated thickness of the Martian crust beneath InSight's landing site in Elysium Planitia?",
+    "ground_truth": "The Martian crust beneath Elysium Planitia has a thickness of either 20 ± 5 km (under a two-layer crustal model) or 39 ± 8 km (under a three-layer model), with a global average of 30 to 72 km.",
+    "reference_contexts": [
+      "The crust beneath the Elysium Planitia landing site has a thickness of either 20 ± 5 km (under a two-layer crustal model) or 39 ± 8 km (under a three-layer model). Global average crustal thickness is estimated at 30 to 72 km."
+    ],
+    "target_doc_id": "NASA-INSIGHT-SEIS"
+  },
+  {
+    "id": "mars_eval_005",
+    "query": "How did the Range Trigger algorithm on Perseverance differ from MSL Curiosity during parachute deployment?",
+    "ground_truth": "MSL Curiosity deployed its parachute at a pre-calculated velocity, whereas Perseverance continuously calculated its remaining downrange distance to the targeted landing ellipse and triggered deployment at a downrange distance of 9.8 km.",
+    "reference_contexts": [
+      "Unlike MSL Curiosity, which deployed its parachute at a pre-calculated velocity, Perseverance continuously calculated its remaining downrange distance to the targeted landing ellipse. Range Trigger triggered mortar firing at a downrange distance of 9.8 km from the target center"
+    ],
+    "target_doc_id": "NASA-M2020-EDL"
+  },
+  {
+    "id": "mars_eval_006",
+    "query": "What mechanism causes coking in MOXIE and how does the control firmware prevent it?",
+    "ground_truth": "Coking occurs when carbon monoxide reduces to solid graphite (Boudouard reaction) if the voltage is too high or CO2 flow drops. MOXIE prevents this by clamping operating cell voltage above -0.92 V against reference.",
+    "reference_contexts": [
+      "If the applied electrical voltage is driven too high, or the local CO2 flow rate drops, carbon monoxide reduces further to solid graphite: 2CO -> C(s) + CO2.",
+      "The system strictly clamps the operating voltage to ensure cell potential never drops below the coking boundary of approximately -0.92 V against reference"
+    ],
+    "target_doc_id": "NASA-M2020-MOXIE"
+  },
+  {
+    "id": "mars_eval_007",
+    "query": "What was the magnitude and significance of the marsquake event S1222a recorded by InSight SEIS?",
+    "ground_truth": "Event S1222a was a magnitude Mw = 4.7 ± 0.2 quake recorded on Sol 1222. It released more seismic energy than all other recorded marsquakes combined and reverberated for more than 10 hours.",
+    "reference_contexts": [
+      "SEIS recorded event S1222a, a magnitude MW = 4.7 ± 0.2 quake. This event released more seismic energy than all other recorded marsquakes combined. S1222a reverberated for more than 10 hours and generated surface Rayleigh and Love waves"
+    ],
+    "target_doc_id": "NASA-INSIGHT-SEIS"
+  },
+  {
+    "id": "mars_eval_008",
+    "query": "What clay minerals were detected by CheMin in Gale Crater and what was the water's pH?",
+    "ground_truth": "CheMin identified 20 to 30 weight percent smectite phyllosilicates (nontronite and saponite clays), which formed under benign, low-salinity aqueous conditions with circum-neutral pH (pH 7 to 8).",
+    "reference_contexts": [
+      "CheMin identified 20 to 30 weight percent smectite phyllosilicates (nontronite and saponite clays), which formed under benign, low-salinity aqueous conditions with circum-neutral pH (pH 7 to 8)."
+    ],
+    "target_doc_id": "NASA-MSL-SAM"
+  },
+  {
+    "id": "mars_eval_009",
+    "query": "What radius was determined for the liquid metallic core of Mars by InSight?",
+    "ground_truth": "InSight determined that Mars has a liquid metallic core with a radius of 1,830 ± 40 km, indicating a relatively low density of 6.0 to 6.3 g/cm3 containing 10% to 15% sulfur by weight.",
+    "reference_contexts": [
+      "InSight determined that Mars has a liquid metallic core with a radius of 1,830 ± 40 km. This surprisingly large radius indicates a relatively low core density (6.0 to 6.3 g/cm³), requiring that the liquid iron-nickel core contains a high fraction of light alloying elements, including roughly 10% to 15% sulfur by weight"
+    ],
+    "target_doc_id": "NASA-INSIGHT-SEIS"
+  },
+  {
+    "id": "mars_eval_010",
+    "query": "What are the specs of the polyethylene composite radiation shield used on the crewed interplanetary transit habitat?",
+    "ground_truth": "Based on the provided NASA technical reports, this information is not available.",
+    "reference_contexts": [],
+    "target_doc_id": "NEGATIVE_OUT_OF_SCOPE"
+  }
+]
+
